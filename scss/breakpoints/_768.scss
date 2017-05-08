@@ -1,0 +1,41 @@
+/****************************
+DESKTOP STYLES (768px and up)
+****************************/
+
+
+	img#logoHeader {
+		margin: 5px 0 5px 0;
+	}
+
+	a#tap-to-talk {
+		padding: 0px 20px 10px 20px;
+		float: right;
+		text-align: right;
+	}
+		span.tap {
+			display: none;
+		}
+
+		span.phone-number {
+			font-size: 30px;
+		}
+
+section#introducing {
+	
+	.container {
+		text-align: center;
+	}
+}
+
+section#build-bone {
+	text-align: center;
+
+	h2 {
+		font-size: 24px;
+	}
+}
+
+	div.book-text {
+		line-height: 1.1;
+		font-size: 16px;
+	}
