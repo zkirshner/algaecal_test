@@ -34,7 +34,7 @@ function populatePhoneLink() { // populate site phone # link with default phone 
 }
 
 function toggleBoneSpecialist() { // show 'Speak to Our Bone Specialist' during business hours
-	//setInterval(function() { // re-check time every second in case the state of business hours changes
+	setInterval(function() { // re-check time aagainst business hours every 60 seconds in case the state of business hours changes
 		var clientTime = moment(); // get client's date/time
 	    var clientTimePST = moment(clientTime).tz("America/Vancouver"); // convert client's date/time to Vancouver date/time
 
@@ -56,7 +56,7 @@ function toggleBoneSpecialist() { // show 'Speak to Our Bone Specialist' during 
 				"display": "none"
 			});
 		}
-	//}, 1000);
+	}, 60000);
 }
 
 function showProductBundles() { // show package-pricing bundle boxes
