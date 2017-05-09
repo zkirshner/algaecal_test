@@ -34,29 +34,27 @@ function populatePhoneLink() { // populate site phone # link with default phone 
 }
 
 function toggleBoneSpecialist() { // show 'Speak to Our Bone Specialist' during business hours
-	setInterval(function() { // re-check time aagainst business hours every 60 seconds in case the state of business hours changes
-		var clientTime = moment(); // get client's date/time
-	    var clientTimePST = moment(clientTime).tz("America/Vancouver"); // convert client's date/time to Vancouver date/time
+	var clientTime = moment(); // get client's date/time
+    var clientTimePST = moment(clientTime).tz("America/Vancouver"); // convert client's date/time to Vancouver date/time
 
-	    // extract current day and time:
-	    var currentDay = clientTimePST.day();
-	    var currentTime = moment(clientTimePST, 'HH:mm:ss a');
+    // extract current day and time:
+    var currentDay = clientTimePST.day();
+    var currentTime = moment(clientTimePST, 'HH:mm:ss a');
 
-	    // determine office hours for current day:
-	    var openTime = moment(((RESTdata.acf.office_hours[currentDay].starting_time) / 100) + ":00 am", 'HH:mm:ss a');
-		var closeTime = moment((((RESTdata.acf.office_hours[currentDay].closing_time) / 100) - 12) + ":00 pm", 'HH:mm:ss a');
+    // determine office hours for current day:
+    var openTime = moment(((RESTdata.acf.office_hours[currentDay].starting_time) / 100) + ":00 am", 'HH:mm:ss a');
+	var closeTime = moment((((RESTdata.acf.office_hours[currentDay].closing_time) / 100) - 12) + ":00 pm", 'HH:mm:ss a');
 
-	   	// determine whether current time is within business hours:
-	    if (currentTime.isBetween(openTime, closeTime)) { // during business hours:
-			$("#phone-icon, .speak").css({ // show 'Speak to Our Bone Specialist'
-				"display": "inline-block"
-			});
-		} else { // not during business hours:
-			$("#phone-icon, .speak").css({ // hide 'Speak to Our Bone Specialist'
-				"display": "none"
-			});
-		}
-	}, 60000);
+   	// determine whether current time is within business hours:
+    if (currentTime.isBetween(openTime, closeTime)) { // during business hours:
+		$("#phone-icon, .speak").css({ // show 'Speak to Our Bone Specialist'
+			"display": "inline-block"
+		});
+	} else { // not during business hours:
+		$("#phone-icon, .speak").css({ // hide 'Speak to Our Bone Specialist'
+			"display": "none"
+		});
+	}
 }
 
 function showProductBundles() { // show package-pricing bundle boxes
