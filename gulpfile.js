@@ -1,3 +1,9 @@
+/*
+GULPFILE
+
+Gulp tasks not currently in use are commented out.
+*/
+
 // load Gulp package from node_modules folder:
 var gulp = require("gulp");
 
@@ -21,15 +27,16 @@ gulp.task("sass", function() {
 });
 
 // concatenate scripts:
-/*gulp.task("scripts", function() {  
-    return gulp.src(jsFiles)
-        .pipe(concat("scripts.js"))
-        .pipe(gulp.dest(jsDest))
-        .pipe(rename('scripts.min.js'))
-        .pipe(uglify())
-        .pipe(gulp.dest(jsDest));
-});*/
+//gulp.task("scripts", function() {  
+//    return gulp.src(jsFiles)
+//        .pipe(concat("scripts.js"))
+//        .pipe(gulp.dest(jsDest))
+//        .pipe(rename('scripts.min.js'))
+//        .pipe(uglify())
+//        .pipe(gulp.dest(jsDest));
+//});
 
+// pipe fonts to dist folder:
 //gulp.task('fonts', function() {
 //    return gulp.src('app/fonts/**/*')
 //        .pipe(gulp.dest('dist/fonts'));
