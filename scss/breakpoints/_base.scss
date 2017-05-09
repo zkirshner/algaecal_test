@@ -5,8 +5,6 @@ BASE (MOBILE) STYLES
 body {
 	font-family: 'Glober', 'Roboto', sans-serif;
 	text-align: center;
-
-	font-weight: thin;
 }
 
 header#header {
@@ -65,12 +63,13 @@ section#introducing {
 	text-align: center;
 	
 	h1 {
+		margin-left: -10px;
+		margin-right: -10px;
 		display: block;
 		color: #fff;
 		font-size: 30px;
 		line-height: 1.5;
-		margin-left: -10px;
-		margin-right: -10px;
+		font-weight: bold;
 		
 		span.white-line {
 			width: 15%; 
@@ -99,6 +98,7 @@ section#introducing {
 			color: #fff;
 			font-size: 30px;
 			line-height: 1.4;
+			font-weight: bold;
 		}
 
 		span.increases-bone {
@@ -130,6 +130,7 @@ section#introducing {
 section#build-bone {
 	padding: 15px;
 	text-align: left;
+	font-weight: normal;
 
 	h2 {
 		line-height: 1.3;
@@ -183,6 +184,7 @@ section#products {
 				margin: 0 auto;
 				padding: 3px 0 0 0;
 				font-size: 16px;
+				font-weight: bold;
 				text-transform: uppercase;
 				color: #fff;
 			}
@@ -194,15 +196,15 @@ section#products {
 				text-align: center;
 				color: #000;
 			}
-				h3.product-name {
-					font-size: 40px;
+				h3.product-title {
+					font-size: 30px;
 					font-weight: bold;
-					color: #000;
-				}
+					color: #000;				}
 
 				h4.product-description {
 					font-size: 20px;
 					color: $teal;
+					font-weight: bold;
 				}
 
 				.product-image {
@@ -236,12 +238,12 @@ section#products {
 						font-size: 16px;
 					}
 
-				.button-add-to-cart {
+				a.button-add-to-cart {
 					width: 100%;
 					max-width: 237px;
 					height: 50px;
 					margin: 30px auto;
-					padding: 10px 0 0 70px;
+					padding: 12px 0 0 70px;
 					position: relative;
 				    display: block;
 				    background-color: $green-light;
@@ -250,6 +252,7 @@ section#products {
 				    box-shadow: 0 6px 0 0 #26875b;
 				    text-decoration: none;
 				    font-size: 20px;
+				    font-weight: bold;
 					color: #fff !important;
 
 				    img {
@@ -273,11 +276,13 @@ section#products {
 					background-color: $orange;
 					line-height: 18px;
 					font-size: 16px;
+					font-weight: bold;
 					text-transform: uppercase;
 				    color: #fff;
 				}
 					.percent {
 						font-size: 22.5px;
+						font-weight: bold;
 					}
 
 section#supplement-facts {
@@ -286,6 +291,7 @@ section#supplement-facts {
 
 	h2 {
 		padding: 20px 0 10px 0;
+		font-weight: bold;
 	}
 }
 	.supplement-fact-box {
@@ -299,6 +305,14 @@ section#supplement-facts {
 		font-weight: bold;
 		font-size: 18px;
 		line-height: 1;
+
+		small {
+			font-weight: bold;
+		}
+
+		span.pull-right {
+			float: right;
+		}
 
 		table {
 			width: 100%;
@@ -327,17 +341,19 @@ section#supplement-facts {
 			padding: 5px 5px 7px 5px;
 			border-top: 16px solid #000;
 		    border-bottom: 8px solid #000;
+		    font-weight: regular;
 		}
 
 		td.daily-values {
 		    width: 25%;
-		    font-weight: 700;
+		    font-weight: bold;
 		    vertical-align: top;
 		    text-align: right;
 		}
 		
 		td.bottom-info {
 	    	border-top: 16px solid #000;
+	    	font-weight: bold;
 	    }
 	}
 
@@ -353,6 +369,7 @@ section#stronger-bones {
 
 		h3 {
 			color: $orange;
+			font-weight: bold;
 		}
 
 		img#stronger-bones-badge {
@@ -398,6 +415,7 @@ section#as-seen-on {
 			margin: 0;
 			padding: 6px 0 0 0;
 			font-size: 22px;
+			font-weight: bold;
 			color: #fff;
 		}
 	}
@@ -456,6 +474,7 @@ section#scientific-references {
 	h4 {
 		margin-bottom: 20px;
 		font-size: 22px;
+		font-weight: bold;
 		color: $teal;
 	}
 
@@ -475,7 +494,7 @@ a.button-buy-now {
 	width: 270px;
 	height: 50px;
 	margin: 30px auto;
-	padding: 7px 0 0 70px;
+	padding: 9px 0 0 70px;
 	position: relative;
     display: block;
     background-color: $green-light;
@@ -484,6 +503,7 @@ a.button-buy-now {
     box-shadow: 0 8px 0 0 #26875b;
     text-decoration: none;
     font-size: 22px;
+    font-weight: bold;
 	color: #fff !important;
 	left: 10px;
 
@@ -522,7 +542,7 @@ footer#footer {
 				a {
 					padding: 0 6px 0 2px;
 					display: block;
-					border-right: 2px solid #606060;
+					border-right: 1px solid #606060;
 					color: #888888;
 					line-height: 1.2;
 				}

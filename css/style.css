@@ -8,7 +8,7 @@ FONT STYLES
 **********/
 @font-face {
   font-family: 'Glober';
-  src: url("Glober_Thin_Free-webfont.woff2") format("woff2"), url("Glober_Thin_Free-webfont.woff") format("woff");
+  src: url("../fonts/Glober_Thin_Free-webfont.woff2") format("woff2"), url("../fonts/Glober_Thin_Free-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 
@@ -23,8 +23,7 @@ BASE (MOBILE) STYLES
 *******************/
 body {
   font-family: 'Glober', 'Roboto', sans-serif;
-  text-align: center;
-  font-weight: thin; }
+  text-align: center; }
 
 header#header {
   width: 100%;
@@ -76,12 +75,13 @@ section#introducing {
   color: #fff;
   text-align: center; }
   section#introducing h1 {
+    margin-left: -10px;
+    margin-right: -10px;
     display: block;
     color: #fff;
     font-size: 30px;
     line-height: 1.5;
-    margin-left: -10px;
-    margin-right: -10px; }
+    font-weight: bold; }
     section#introducing h1 span.white-line {
       width: 15%;
       max-width: 90px;
@@ -102,7 +102,8 @@ section#introducing {
       display: inline-block;
       color: #fff;
       font-size: 30px;
-      line-height: 1.4; }
+      line-height: 1.4;
+      font-weight: bold; }
     section#introducing .container span.increases-bone {
       display: inline-block;
       background-image: url("../images/underline_increases_bone.png");
@@ -124,7 +125,8 @@ section#introducing {
 
 section#build-bone {
   padding: 15px;
-  text-align: left; }
+  text-align: left;
+  font-weight: normal; }
   section#build-bone h2 {
     line-height: 1.3;
     font-size: 20px; }
@@ -163,6 +165,7 @@ section#products {
   margin: 0 auto;
   padding: 3px 0 0 0;
   font-size: 16px;
+  font-weight: bold;
   text-transform: uppercase;
   color: #fff; }
 
@@ -173,14 +176,15 @@ section#products {
   text-align: center;
   color: #000; }
 
-h3.product-name {
-  font-size: 40px;
+h3.product-title {
+  font-size: 30px;
   font-weight: bold;
   color: #000; }
 
 h4.product-description {
   font-size: 20px;
-  color: #53b8bf; }
+  color: #53b8bf;
+  font-weight: bold; }
 
 .product-image {
   width: 100%; }
@@ -208,12 +212,12 @@ h4.product-description {
   transform: translateY(-22%);
   font-size: 16px; }
 
-.button-add-to-cart {
+a.button-add-to-cart {
   width: 100%;
   max-width: 237px;
   height: 50px;
   margin: 30px auto;
-  padding: 10px 0 0 70px;
+  padding: 12px 0 0 70px;
   position: relative;
   display: block;
   background-color: #37a23e;
@@ -222,8 +226,9 @@ h4.product-description {
   box-shadow: 0 6px 0 0 #26875b;
   text-decoration: none;
   font-size: 20px;
+  font-weight: bold;
   color: #fff !important; }
-  .button-add-to-cart img {
+  a.button-add-to-cart img {
     width: 90px;
     height: 90px;
     position: absolute;
@@ -242,17 +247,20 @@ h4.product-description {
   background-color: #e87b15;
   line-height: 18px;
   font-size: 16px;
+  font-weight: bold;
   text-transform: uppercase;
   color: #fff; }
 
 .percent {
-  font-size: 22.5px; }
+  font-size: 22.5px;
+  font-weight: bold; }
 
 section#supplement-facts {
   padding-top: 10px;
   padding-bottom: 20px; }
   section#supplement-facts h2 {
-    padding: 20px 0 10px 0; }
+    padding: 20px 0 10px 0;
+    font-weight: bold; }
 
 .supplement-fact-box {
   width: 100%;
@@ -265,6 +273,10 @@ section#supplement-facts {
   font-weight: bold;
   font-size: 18px;
   line-height: 1; }
+  .supplement-fact-box small {
+    font-weight: bold; }
+  .supplement-fact-box span.pull-right {
+    float: right; }
   .supplement-fact-box table {
     width: 100%; }
   .supplement-fact-box td {
@@ -282,14 +294,16 @@ section#supplement-facts {
   .supplement-fact-box th.amount-per-serving {
     padding: 5px 5px 7px 5px;
     border-top: 16px solid #000;
-    border-bottom: 8px solid #000; }
+    border-bottom: 8px solid #000;
+    font-weight: regular; }
   .supplement-fact-box td.daily-values {
     width: 25%;
-    font-weight: 700;
+    font-weight: bold;
     vertical-align: top;
     text-align: right; }
   .supplement-fact-box td.bottom-info {
-    border-top: 16px solid #000; }
+    border-top: 16px solid #000;
+    font-weight: bold; }
 
 section#stronger-bones {
   width: 100%;
@@ -300,7 +314,8 @@ section#stronger-bones {
     padding: 20px 30px;
     background-color: #fff; }
     section#stronger-bones #stronger-bones-inner h3 {
-      color: #e87b15; }
+      color: #e87b15;
+      font-weight: bold; }
     section#stronger-bones #stronger-bones-inner img#stronger-bones-badge {
       width: 165px;
       height: auto;
@@ -331,6 +346,7 @@ section#as-seen-on {
       margin: 0;
       padding: 6px 0 0 0;
       font-size: 22px;
+      font-weight: bold;
       color: #fff; }
   section#as-seen-on .container div.row {
     padding-bottom: 5px; }
@@ -372,6 +388,7 @@ section#scientific-references {
   section#scientific-references h4 {
     margin-bottom: 20px;
     font-size: 22px;
+    font-weight: bold;
     color: #53b8bf; }
   section#scientific-references ol {
     display: block;
@@ -385,7 +402,7 @@ a.button-buy-now {
   width: 270px;
   height: 50px;
   margin: 30px auto;
-  padding: 7px 0 0 70px;
+  padding: 9px 0 0 70px;
   position: relative;
   display: block;
   background-color: #37a23e;
@@ -394,6 +411,7 @@ a.button-buy-now {
   box-shadow: 0 8px 0 0 #26875b;
   text-decoration: none;
   font-size: 22px;
+  font-weight: bold;
   color: #fff !important;
   left: 10px; }
   a.button-buy-now img {
@@ -425,7 +443,7 @@ nav#nav-footer {
       nav#nav-footer ul li a {
         padding: 0 6px 0 2px;
         display: block;
-        border-right: 2px solid #606060;
+        border-right: 1px solid #606060;
         color: #888888;
         line-height: 1.2; }
       nav#nav-footer ul li:last-child a {

@@ -13,7 +13,7 @@
 	
 	<div class="container">
 		<section id="build-bone">
-			<h2>Build <strong>brand new bone</strong> <span class="text-uppercase">within 6 months</span> with this <strong>rare algae</strong> calcium...even if you're 85!</h2>
+			<h2>Build <strong>brand new bone</strong> <span class="text-uppercase">within 6 months</span> with this <strong>rare algae</strong> calcium...even if you&#39;re 85!</h2>
 		</section> <!-- end #build-bone -->
 	</div> <!-- end .container -->
 
@@ -168,7 +168,7 @@
 									
 								<tr>
 									<td>
-										Vitamin C <strong>50mg</strong><br />
+										Vitamin C 50mg<br />
 										<small>(as calcium ascorbate)</small>
 									</td>
 									
@@ -179,7 +179,7 @@
 									
 								<tr>
 									<td>
-										Vitamin D3 <strong>1600 IU</strong> <br />
+										Vitamin D3 1600 IU<br />
 										<small>(as cholecalciferol)</small>
 									</td>
 									
@@ -190,7 +190,7 @@
 								
 								<tr>
 									<td>
-										Vitamin K2 <strong>100 mcg</strong><br />
+										Vitamin K2 100 mcg<br />
 										<small>(as menaquinone-7)</small>
 									</td>
 									
@@ -201,7 +201,7 @@
 								
 								<tr>
 									<td>
-										Calcium <strong>720 mg</strong><br />
+										Calcium 720 mg<br />
 										<small>(from algas calcareas)</small>
 									</td>
 									
@@ -212,7 +212,7 @@
 									
 								<tr>
 									<td>
-										Magnesium <strong>350 mg</strong><br />
+										Magnesium 350 mg<br />
 										<small>(from algas calcareas and magnesium oxide)</small>
 									</td>
 									
@@ -223,7 +223,7 @@
 									
 								<tr>
 									<td class="bottom-info">
-										Boron <strong>3.0 mg</strong>*<br />
+										Boron 3.0 mg*<br />
 										<small>(as glycinate)</small>
 									</td>
 									
