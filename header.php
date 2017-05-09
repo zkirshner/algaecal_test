@@ -16,6 +16,8 @@
 
 		<!-- load main CSS: -->
 		<link rel="stylesheet" href="css/style.css">
+
+		<!-- jQuery, Tether and Bootstrap JS, moment.js, moment-timezone.js and the main scripts file (scripts.js) are all loaded in "footer.php" -->
 	</head>
 
 	<body>
